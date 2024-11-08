@@ -10,13 +10,16 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "eslint": "^9.14.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "prettier-eslint": "^16.3.0"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
-    "express-handlebars": "3.0",
+    "express-handlebars": "^8.0.1",
     "pug": "^3.0.3"
   }
 }

@@ -21,6 +21,8 @@ router.post("/add-product",adminCotroller.postAddProduct);
 // /admin/add-product => POST
 router.get("/edit-product/:productId",adminCotroller.getEditProduts);
 
+router.post("/edit-product",adminCotroller.postEditProduct);
+
 
 
 
