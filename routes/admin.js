@@ -23,6 +23,9 @@ router.get("/edit-product/:productId",adminCotroller.getEditProduts);
 
 router.post("/edit-product",adminCotroller.postEditProduct);
 
+router.post('/delete-product', adminCotroller.postDeleteProuct);
+
+
 
 
 
