@@ -6,11 +6,20 @@
         <main class="centered">
             <h1><%= product.title %></h1>
             <hr>
+<<<<<<< HEAD
             <div class="image">
                 <img src="<%= product.imageUrl %>" alt="<%= product.title %>" />
             </div>
             <h2><%= product.price %></h2>
             <p><%= product.description %></p>
             <%- include('../includes/add-to-cart.ejs') %>
+=======
+            <div>
+                <img src="<%= product.imageUrl %>" alt="<% product.alt %>">
+            </div>
+            <h2><%= product.price %></h2>
+            <p><%= product.description %></p>
+            <%- include('../includes/add-to-cart.ejs', {product: product}) %>
+>>>>>>> 8bcc4eaade454316f1a36a13b24483ee05ef91ad
         </main>
         <%- include('../includes/end.ejs') %>

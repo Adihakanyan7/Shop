@@ -1,9 +1,13 @@
 <%- include('../includes/head.ejs') %>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/css/cart.css">
+=======
+>>>>>>> 8bcc4eaade454316f1a36a13b24483ee05ef91ad
     </head>
 
     <body>
         <%- include('../includes/navigation.ejs') %>
+<<<<<<< HEAD
         <main>
             <% if (products.length > 0) { %>
                 <ul class="cart__item-list">
@@ -24,6 +28,22 @@
                         <button type="submit" class="btn">Order Now!</button>
                     </form>
                 </div>
+=======
+
+        <main>
+            <% if( products.length > 0) { %>
+                <ul>
+                    <% products.forEach(p => { %>
+                        <li>
+                            <p><%= p.productData.title %> (<%= p.qty %>)</p>
+                            <form action="/cart-delete-item" method="POST">
+                                <input type="hidden" value="<%= p.productData.id %>" name="productId" >
+                                <button class="btn" type="submit">Delete</button>
+                            </form>
+                        </li>
+                    <% }); %>
+                </ul>
+>>>>>>> 8bcc4eaade454316f1a36a13b24483ee05ef91ad
             <% } else { %>
                 <h1>No Products in Cart!</h1>
             <% } %>

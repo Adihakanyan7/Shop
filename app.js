@@ -1,5 +1,6 @@
 const path = require('path');
 
+<<<<<<< HEAD
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -26,12 +27,32 @@ app.use((req, res, next) => {
         })
         .catch((err) => console.log(err));
 });
+=======
+const { urlencoded } = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
+
+const errorController = require('./controllers/error');
+
+const app = express();
+
+
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
+app.use(bodyParser.urlencoded({extended: false})); // Parsing the body of the request
+app.use(express.static(path.join(__dirname, 'public')));
+>>>>>>> 8bcc4eaade454316f1a36a13b24483ee05ef91ad
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
 app.use(errorController.get404);
 
+<<<<<<< HEAD
 /** REPLACE CONNECTION STRING IF USING ATLAS
  *  "mongodb+srv://<username>:<password>@<cluster-id>.mongodb.net/<dbName>?retryWrites=true&authSource=admin"
  */
@@ -55,3 +76,7 @@ mongoose
     .catch((err) => {
         console.log(err);
     });
+=======
+
+app.listen(3000);
+>>>>>>> 8bcc4eaade454316f1a36a13b24483ee05ef91ad

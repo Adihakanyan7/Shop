@@ -19,6 +19,7 @@ form {
   display: inline;
 }
 
+<<<<<<< HEAD
 .centered {
   text-align: center;
 }
@@ -31,6 +32,12 @@ form {
   height: 100%;
 }
 
+=======
+
+.centered {
+  text-align: center;
+}
+>>>>>>> 8bcc4eaade454316f1a36a13b24483ee05ef91ad
 .main-header {
   width: 100%;
   height: 3.5rem;
@@ -205,6 +212,7 @@ form {
   color: white;
 }
 
+<<<<<<< HEAD
 .btn.danger {
   color: red;
   border-color: red;
@@ -216,6 +224,8 @@ form {
   color: white;
 }
 
+=======
+>>>>>>> 8bcc4eaade454316f1a36a13b24483ee05ef91ad
 @media (min-width: 768px) {
   .main-header__nav {
     display: flex;
